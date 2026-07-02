@@ -23,7 +23,6 @@ ssh -i ~/.ssh/your-key.pem ubuntu@YOUR_EC2_PUBLIC_IP
 
 ### 2. Copy your Flask project from your Mac to EC2
 
-Run this from your **Mac terminal**:
 
 ```bash
 scp -i ~/.ssh/your-key.pem ~/Downloads/Flask_Weather.zip ubuntu@YOUR_EC2_PUBLIC_IP:/home/ubuntu/
@@ -90,8 +89,6 @@ You should now see:
 pip install flask requests pyyaml
 ```
 
-Or, if your project contains a `requirements.txt` file:
-
 ```bash
 pip install -r requirements.txt
 ```
@@ -145,11 +142,4 @@ Open your browser and navigate to:
 ```text
 http://YOUR_EC2_PUBLIC_IP:5000
 ```
-
-## Architecture Diagram
-
-Add your architecture image to an `images` folder in your repository and reference it like this:
-
-```markdown
-![Flask Deployment Architecture](images/flask-deployment.png)
 ```
